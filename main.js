@@ -3,17 +3,24 @@
 // @namespace   Violentmonkey Scripts
 // @match       *://*/t/*/*
 // @grant       none
-// @version     1.0
+// @version     1.1
 // @author      hawm
 // @description A userscript to bypass the discourse-gated-topics-in-category theme component
 // @require https://cdn.jsdelivr.net/npm/@violentmonkey/dom@2
 // ==/UserScript==
 
-VM.observe(document.body, ()=>{
-  if(document.body.classList.contains('topic-in-gated-category')){
+const gatedClassName = 'topic-in-gated-category';
+
+function bypass(){
+  console.log(document.body.classList)
+  if(document.body.classList.contains(gatedClassName)){
     // clear style
-    document.body.classList.remove('topic-in-gated-category')
+    document.body.classList.remove(gatedClassName);
     // hide banner
-    document.querySelector('.topic-above-post-stream-outlet.topic-in-gated-category').style.display = 'none'
+    document.querySelector(`.topic-above-post-stream-outlet.${gatedClassName}`).style.display = 'none';
   }
-})
+}
+
+const observer = new MutationObserver(bypass);
+
+observer.observe(document.body, {attributeFilter: ['class']})
