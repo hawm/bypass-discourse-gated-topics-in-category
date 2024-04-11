@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name   bypass discourse-gated-topics-in-category
-// @namespace   Violentmonkey Scripts
+// @namespace   https://github.com/hawm/bypass-discourse-gated-topics-in-category
 // @grant       none
-// @version     1.2
+// @version     1.3
 // @author      hawm
+// @homepageURL https://github.com/hawm/bypass-discourse-gated-topics-in-category
+// @downloadURL https://raw.githubusercontent.com/hawm/bypass-discourse-gated-topics-in-category/main/main.js
 // @description A userscript to bypass the discourse-gated-topics-in-category theme component
-// @require https://cdn.jsdelivr.net/npm/@violentmonkey/dom@2
 // ==/UserScript==
 
 const gatedClassName = 'topic-in-gated-category';
