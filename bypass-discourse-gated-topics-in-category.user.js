@@ -2,10 +2,10 @@
 // @name   bypass discourse-gated-topics-in-category
 // @namespace   https://github.com/hawm/bypass-discourse-gated-topics-in-category
 // @grant       none
-// @version     1.3
+// @version     1.4
 // @author      hawm
 // @homepageURL https://github.com/hawm/bypass-discourse-gated-topics-in-category
-// @downloadURL https://raw.githubusercontent.com/hawm/bypass-discourse-gated-topics-in-category/main/main.js
+// @downloadURL https://raw.githubusercontent.com/hawm/bypass-discourse-gated-topics-in-category/main/bypass-discourse-gated-topics-in-category.user.js
 // @description A userscript to bypass the discourse-gated-topics-in-category theme component
 // ==/UserScript==
 
