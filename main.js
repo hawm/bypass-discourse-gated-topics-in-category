@@ -31,7 +31,7 @@ const observer = new MutationObserver((record, observer)=>{
 });
 
 // apply on Discourse powered website only
-if(Discourse){
+if(typeof Discourse !== 'undefined'){
   // for init page
   bypass();
   // for page change
